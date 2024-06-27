@@ -1,0 +1,38 @@
+// Dynamic Gallery
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.gallery-img');
+    const mainImage = document.getElementById('main-image');
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            mainImage.src = image.src;
+        });
+    });
+});
+
+// Contact Form Validation
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields.');
+            event.preventDefault();
+        }
+    });
+});
+
+// Simple Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    header.style.transition = 'background-color 0.5s ease';
+    header.addEventListener('mouseover', () => {
+        header.style.backgroundColor = '#ff1493';
+    });
+    header.addEventListener('mouseout', () => {
+        header.style.backgroundColor = '#ff69b4';
+    });
+});

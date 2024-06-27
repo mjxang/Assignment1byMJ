@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sanrio Hobby Website</title>
+    <title>Contact - Sanrio Hobby Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>About My Sanrio Hobby</h1>
+        <h1>Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,19 +21,24 @@
 
     <main>
         <section>
-            <h2>How It All Started</h2>
-            <p>My love for Sanrio characters began when I was a child...</p>
-        </section>
-        
-        <section>
-            <h2>Favorite Characters</h2>
-            <p>Some of my favorite characters include...</p>
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 My Sanrio Hobby Website</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
