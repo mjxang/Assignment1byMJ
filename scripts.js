@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 // Contact Form Validation
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');

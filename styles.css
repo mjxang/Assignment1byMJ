@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #ff69b4;
+    background-color: #ff76bb;
     color: white;
     padding: 1em;
     text-align: center;
@@ -27,18 +27,32 @@ div.scroll-container {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 1em;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
+    background-color: #f9a0cc;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    border: 2px solid #ff1493;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+nav ul li a:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+
 
 footer {
     background-color: #ff69b4;
@@ -52,7 +66,7 @@ footer {
 }
 
 h1, h2 {
-    color: #ff1493;
+    color: #f449a4;
     font-family: 'Press Start 2P', cursive;
 }
 
